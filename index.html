@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div id="wrapper">
+    <main>
+        <section id="gameView">
+            <h1>Tic Tac Toe</h1>
+            <div id="board">
+                <div class="square top left">
+                    <div></div>
+                </div>
+                <div class="square top">
+                    <div></div>
+                </div>
+                <div class="square top right">
+                    <div></div>
+                </div>
+                <div class="square left">
+                    <div></div>
+                </div>
+                <div class="square">
+                    <div></div>
+                </div>
+                <div class="square right">
+                    <div></div>
+                </div>
+                <div class="square bottom left">
+                    <div></div>
+                </div>
+                <div class="square bottom">
+                    <div></div>
+                </div>
+                <div class="square bottom right">
+                    <div></div>
+                </div>
+            </div>
+        </section>
+        <section id="chooseView">
+            Choose symbol:
+            <div>x</div>
+            <div>o</div>
+        </section>
+    </main>
+</div>
+<script src="scripts/attach-events.js"></script>
+<script>$(() => startApp())</script>
+</body>
+</html>
