@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+    font-size: 24pt;
 }
 #wrapper {
     margin: 0 auto;
@@ -10,12 +12,18 @@
 
 h1 {
     text-align: center;
+    font-size: 2em;
 }
+
+#gameView {
+
+}
+
 #board {
-    display: none;
-    margin: 0 auto;
+    margin-left: 150px;
     width: 600px;
     height: 600px;
+    display: inline-block;
 }
 
 .square {
@@ -25,48 +33,40 @@ h1 {
 }
 
 .top {
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 }
 
 .bottom {
-    border-top: 2px solid black;
+    border-top: 3px solid black;
 }
 
 .left {
-    border-right: 2px solid black;
+    border-right: 3px solid black;
 }
 
 .right {
-    border-left: 2px solid black;
+    border-left: 3px solid black;
 }
 
 .square div {
+    position: relative;
     width: 100%;
     height: 100%;
 }
 
 .square .o {
-    color: red;
     width: 66%;
     height: 66%;
-    border: 15px solid black;
+    border: 15px solid red;
     border-radius: 50%;
-    position: relative;
     top: 16%;
     left: 16%;
 }
 
-.x {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
 .x:before, .x:after {
     content: '';
-    color: blue;
     display: block;
-    background-color: black;
+    background-color: blue;
     width: 15px;
     height: 160px;
     position: absolute;
@@ -75,6 +75,20 @@ h1 {
     top: 10%;
 }
 
+#line {
+    display: block;
+    background-color: transparent;
+    width: 25px;
+    height: 600px;
+    position: absolute;
+    border-radius: 5px;
+    left: 49%;
+    top: 9%;
+}
+
+#board:after {
+    transform: rotate(-45deg);
+}
 .x:before{
     transform: rotate(-45deg);
 }
@@ -84,7 +98,7 @@ h1 {
 }
 
 #chooseView {
-    font-size: 2em;
+    font-size: 1.5em;
     position: relative;
     margin: 50px auto;
     width: 250px;
@@ -94,7 +108,7 @@ h1 {
     margin: 30px;
     text-align: center;
     font-size: 3em;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 50px;
     padding-bottom: 15px;
     cursor: pointer;
@@ -116,4 +130,12 @@ h1 {
 #chooseView div:last-child:hover {
     background-color: red;
     color: white;
+}
+
+#result {
+    float: right;
+    display: inline-block;
+    margin: 200px 0 0 30px;
+    font-size: 2em;
+    width: 100px;
 }
