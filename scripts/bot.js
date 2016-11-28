@@ -190,10 +190,3 @@ class Bot {
         }
     }
 }
-
-let bot = new Bot('o','x');
-console.log(bot.makeMove([
-    [' ', ' ', ' '],
-    [' ', ' ',' '],
-    ['o', 'x', 'o']
-]));
