@@ -5,6 +5,7 @@
     <title>Tic Tac Toe</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 </head>
 <body>
 <div id="wrapper">
@@ -13,32 +14,33 @@
             <h1>Tic Tac Toe</h1>
             <div id="board">
                 <div class="square top left">
-                    <div></div>
+                    <div id="00"></div>
                 </div>
                 <div class="square top">
-                    <div></div>
+                    <div id="01"></div>
                 </div>
                 <div class="square top right">
-                    <div></div>
+                    <div id="02"></div>
                 </div>
                 <div class="square left">
-                    <div></div>
+                    <div id="10"></div>
                 </div>
                 <div class="square">
-                    <div></div>
+                    <div id="11"></div>
                 </div>
                 <div class="square right">
-                    <div></div>
+                    <div id="12"></div>
                 </div>
                 <div class="square bottom left">
-                    <div></div>
+                    <div id="20"></div>
                 </div>
                 <div class="square bottom">
-                    <div></div>
+                    <div id="21"></div>
                 </div>
                 <div class="square bottom right">
-                    <div></div>
+                    <div id="22"></div>
                 </div>
+                <div id="line"></div>
             </div>
         </section>
         <section id="chooseView">
@@ -49,6 +51,7 @@
     </main>
 </div>
 <script src="scripts/attach-events.js"></script>
+<script src="scripts/bot.js"></script>
 <script>$(() => startApp())</script>
 </body>
 </html>
